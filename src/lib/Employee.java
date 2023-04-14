@@ -18,9 +18,6 @@ public class Employee {
 	private int dayJoined;
 	private int monthWorkingInYear;
 	
-	private boolean isForeigner;
-	private boolean gender; //true = Laki-laki, false = Perempuan
-	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
@@ -40,8 +37,6 @@ public class Employee {
 		this.yearJoined = yearJoined;
 		this.monthJoined = monthJoined;
 		this.dayJoined = dayJoined;
-		this.isForeigner = isForeigner;
-		this.gender = gender;
 		
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
@@ -55,19 +50,13 @@ public class Employee {
 	public void setMonthlySalary(int grade) {	
 		if (grade == 1) {
 			monthlySalary = 3000000;
-			if (isForeigner) {
 				monthlySalary = (int) (3000000 * 1.5);
-			}
 		}else if (grade == 2) {
 			monthlySalary = 5000000;
-			if (isForeigner) {
 				monthlySalary = (int) (3000000 * 1.5);
-			}
 		}else if (grade == 3) {
 			monthlySalary = 7000000;
-			if (isForeigner) {
 				monthlySalary = (int) (3000000 * 1.5);
-			}
 		}
 	}
 	
